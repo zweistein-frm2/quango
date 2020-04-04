@@ -1,0 +1,7 @@
+six
+ipaddress
+psutil>=3.0.0
+qtconsole>=4.0.0
+PyTango>=8.1
+numpy
+opencv-python

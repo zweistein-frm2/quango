@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quango</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../res/quango.qrc">
+    <normaloff>:/appicon.png</normaloff>:/appicon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Filter:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="filterLineEdit"/>
+          </item>
+          <item>
+           <widget class="QToolButton" name="refreshListBtn">
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../res/quango.qrc">
+              <normaloff>:/arrow-circle-double.png</normaloff>:/arrow-circle-double.png</iconset>
+            </property>
+            <property name="autoRaise">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QSplitter" name="treeSplitter">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QTreeWidget" name="tree">
+           <property name="contextMenuPolicy">
+            <enum>Qt::CustomContextMenu</enum>
+           </property>
+           <column>
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Server</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QListWidget" name="openDevsList"/>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAdd_Tango_host"/>
+    <addaction name="actionScan_subnet"/>
+    <addaction name="separator"/>
+    <addaction name="actionReopen"/>
+    <addaction name="actionClear_hosts"/>
+    <addaction name="actionUpdate_device_list"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionPython_shell"/>
+    <addaction name="separator"/>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="../../res/quango.qrc">
+     <normaloff>:/door-open.png</normaloff>:/door-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../../res/quango.qrc">
+     <normaloff>:/appicon.png</normaloff>:/appicon.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionPop_out">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../res/quango.qrc">
+     <normaloff>:/applications-blue.png</normaloff>:/applications-blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pop out</string>
+   </property>
+  </action>
+  <action name="actionAdd_Tango_host">
+   <property name="icon">
+    <iconset resource="../../res/quango.qrc">
+     <normaloff>:/server.png</normaloff>:/server.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Tango host ...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionUpdate_device_list">
+   <property name="icon">
+    <iconset resource="../../res/quango.qrc">
+     <normaloff>:/arrow-circle-double.png</normaloff>:/arrow-circle-double.png</iconset>
+   </property>
+   <property name="text">
+    <string>Update device list</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="icon">
+    <iconset resource="../../res/quango.qrc">
+     <normaloff>:/drill.png</normaloff>:/drill.png</iconset>
+   </property>
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionPython_shell">
+   <property name="icon">
+    <iconset resource="../../res/quango.qrc">
+     <normaloff>:/terminal-network.png</normaloff>:/terminal-network.png</iconset>
+   </property>
+   <property name="text">
+    <string>Python shell</string>
+   </property>
+  </action>
+  <action name="actionScan_subnet">
+   <property name="icon">
+    <iconset resource="../../res/quango.qrc">
+     <normaloff>:/servers-network.png</normaloff>:/servers-network.png</iconset>
+   </property>
+   <property name="text">
+    <string>Scan subnet ...</string>
+   </property>
+  </action>
+  <action name="actionClear_hosts">
+   <property name="icon">
+    <iconset resource="../../res/quango.qrc">
+     <normaloff>:/broom.png</normaloff>:/broom.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear hosts</string>
+   </property>
+  </action>
+  <action name="actionReopen">
+   <property name="icon">
+    <iconset resource="../../res/quango.qrc">
+     <normaloff>:/plug.png</normaloff>:/plug.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reopen last used devices</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../res/quango.qrc"/>
+ </resources>
+ <connections/>
+</ui>
