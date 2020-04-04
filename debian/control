@@ -1,0 +1,23 @@
+Source: tango-apps-quango
+Section: misc
+Priority: optional
+Maintainer: Georg Brandl <g.brandl@fz-juelich.de>
+Build-Depends: debhelper (>= 10~),
+ dh-python,
+ git,
+ python (>= 2.7),
+ python-setuptools
+Standards-Version: 4.1.4
+
+Package: tango-apps-quango
+Architecture: all
+Depends: ${misc:Depends},
+ ${python:Depends},
+ python-six,
+ python-pytango,
+ python-ipaddress | python-ipaddr,
+ python-psutil,
+ python-qt4
+Description: Quango is a generic Tango device client
+ A generic client for all Tango devices, with special features
+ for devices that conform to the MLZ Tango device interfaces.

@@ -1,0 +1,871 @@
+tango-apps-quango (2.4.5) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * mainwindow: fix loading of bytearrays through QSettings on Py2/3
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Tue, 28 Jan 2020 10:53:36 +0100
+
+tango-apps-quango (2.4.4) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * fixup debian description
+  * utils: fix py3 compatibility for comparing addresses (Fixes: #4128)
+  * pyshell: use new widget instead of deprecated one
+
+  [ Jens Krüger ]
+  * Add version dependencies for some required packages
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 15 Nov 2019 11:36:52 +0100
+
+tango-apps-quango (2.4.3) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * mlzgui: fix ContMove gui
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 30 Sep 2019 08:20:35 +0200
+
+tango-apps-quango (2.4.2) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * add isort config, sort everything
+  * debian: add misc:Depends
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 08 Aug 2019 13:29:26 +0200
+
+tango-apps-quango (2.4.1) unstable; urgency=low
+
+  * UNRELEASED
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 08 Aug 2019 13:17:05 +0200
+
+tango-apps-quango (2.4.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * fix rereading accel/decel from mlzgui
+  * update debian
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 07 Aug 2019 15:40:36 +0200
+
+tango-apps-quango (2.3.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * pylint cleanup
+  * Python 3 cleanup
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 10 May 2019 19:06:40 +0200
+
+tango-apps-quango (2.2.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * main: catch exceptions on DB info
+  * move code to main module, to import version.py without deps
+  * copyright update
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 10 May 2019 13:02:50 +0200
+
+tango-apps-quango (2.2.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * remove "about qt"
+  * property handling: offer a single "apply" instead of individual buttons
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 24 Jan 2019 11:51:16 +0100
+
+tango-apps-quango (2.1.7) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * allow deleting devices/servers even if device is "exported"
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 29 Aug 2018 13:06:16 +0200
+
+tango-apps-quango (2.1.6) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * mlzgui: update "target" box with last written value of attribute
+  * mlzgui: use pollinterval from preferences
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Tue, 21 Aug 2018 12:25:37 +0200
+
+tango-apps-quango (2.1.5) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * mlzgui: guard against very large slider values (which crashes)
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 17 Aug 2018 08:30:04 +0200
+
+tango-apps-quango (2.1.4) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * commands: run WriteLine for Ctrl-Enter on Communicate
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 17 Aug 2018 06:59:01 +0200
+
+tango-apps-quango (2.1.3) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * properties: offer retry for property display
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 13 Jul 2018 14:02:57 +0200
+
+tango-apps-quango (2.1.2) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * mlzgui: guard against div/0
+  * fix clicking anchors in the result window
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 23 May 2018 11:04:45 +0200
+
+tango-apps-quango (2.1.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * all: copyright update
+  * fixup import order for Qt5
+  * add release targets to Makefile
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 18 Apr 2018 11:42:42 +0200
+
+tango-apps-quango (2.1.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * add missing files
+  * add MLZGUI for digital input/outputs
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Sat, 10 Mar 2018 14:19:45 +0100
+
+tango-apps-quango (2.0.2) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * add MLZGUI for StringIO
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 07 Mar 2018 10:02:20 +0100
+
+tango-apps-quango (2.0.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * mlzgui: fix Adjust buttons
+  * mlzgui: dont write value on slider release
+  * properties: reread after apply
+  * mlzgui: complain on invalid numeric inputs
+  * mlzgui: add reread buttons for non-polled attrs
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Tue, 06 Feb 2018 13:39:08 +0100
+
+tango-apps-quango (2.0.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Add warning that changed properties dont last forever.
+  * Remove old-style signal/slot remains.
+  * Copyright update.
+  * Port to Qt5/Qt4.
+  * Remove unused file.
+  * It was funny for a while.
+  * Qt 5: Do not abort on exceptions in signal handlers.
+  * Add GUI controls for MLZ baseclasses.
+
+  [ Alexander Lenz ]
+  * tweak motor/actuator gui
+
+  [ Georg Brandl ]
+  * add GUI for AnalogOutput
+  * add GUI for AnalogInput and Sensor
+  * Squeeze the status label a bit.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 17 Jan 2018 17:26:26 +0100
+
+tango-apps-quango (1.8.0) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * fix info tab.
+
+  [ Georg Brandl ]
+  * Write attribute on Ctrl-Return, read on Return.
+  * Default device description can contain "Tango" or "TANGO".
+  * Nicer input line when clicking on DevString command anchor.
+  * Fixup test_value with newest behavior.
+  * Allow polling non-Void commands.
+  * Minor fixes to value conversion.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 05 Oct 2017 09:14:19 +0200
+
+tango-apps-quango (1.7.5) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * remove unused comthread.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 17 Aug 2017 15:02:43 +0200
+
+tango-apps-quango (1.7.4) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * device panel: show device description if any.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 17 Aug 2017 14:53:05 +0200
+
+tango-apps-quango (1.7.3) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * subnet: fix ui
+  * fix deps
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Tue, 11 Apr 2017 12:57:36 +0200
+
+tango-apps-quango (1.7.2) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Prevent exception if dev panel is already (for some reason) closed.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 09 Mar 2017 10:58:51 +0100
+
+tango-apps-quango (1.7.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Handle non-7bit ascii in string I/O without errors.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 09 Mar 2017 09:15:12 +0100
+
+tango-apps-quango (1.7.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * update all version.py to the same code base
+  * Use history-stepping line edit for the command arguments, save history by device
+  * Remember last opened devices and offer to restore them via menu entry
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 17 Feb 2017 13:03:42 +0100
+
+tango-apps-quango (1.6.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * device: show attribute units
+  * device: preselect Value too
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 01 Feb 2017 11:32:19 +0100
+
+tango-apps-quango (1.6.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * device panel: add a "retry connection" button
+  * attribute read: show write value if present
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 01 Feb 2017 11:15:00 +0100
+
+tango-apps-quango (1.5.2) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Shorten long arrays in display.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 19 Jan 2017 12:36:51 +0100
+
+tango-apps-quango (1.5.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Not alpha anymore.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 18 Jan 2017 11:01:22 +0100
+
+tango-apps-quango (1.5.0) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * Add subnet scan.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 05 Jan 2017 13:52:09 +0100
+
+tango-apps-quango (1.4.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Also create links for errored actions.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 06 Oct 2016 15:20:52 +0200
+
+tango-apps-quango (1.4.0) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * Introduce action links within the output log.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 28 Sep 2016 10:39:15 +0200
+
+tango-apps-quango (1.3.10) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Remove duplicate method.
+  * Remove previously shown device panel on Reload.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 02 Sep 2016 10:50:53 +0200
+
+tango-apps-quango (1.3.9) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Add files for generating PyInstaller.
+  * Do not package the qtconsole dependencies in the installer.
+  * Fix missing argument.
+  * Use Unix newlines for pyinstaller file.
+  * Properly handle failures in GetProperties.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 17 Aug 2016 10:02:55 +0200
+
+tango-apps-quango (1.3.8) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Missing run dependency.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 20 Jul 2016 12:48:30 +0200
+
+tango-apps-quango (1.3.7) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * note six dependency.
+  * Dont print import errors for the pyshell.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 20 Jul 2016 12:04:14 +0200
+
+tango-apps-quango (1.3.6) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * qtconsole: use newer modules for import
+  * device: preselect "Communicate" or "value" command/attr
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 18 Jul 2016 17:27:02 +0200
+
+tango-apps-quango (1.3.5) unstable; urgency=low
+
+  [ Christian Felder ]
+  * Fix: Do not fail at startup if no tango-db has been configured on localhost.
+  * Do not add new tango hosts on connection failures.
+  * Report tango errors when adding new hosts.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 15 Jul 2016 15:48:36 +0200
+
+tango-apps-quango (1.3.4) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * File header update.
+  * Fix __all__.
+
+  [ Alexander Lenz ]
+  * Make dev path selectable.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 07 Apr 2016 15:29:13 +0200
+
+tango-apps-quango (1.3.3) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Fix determination of array types for attributes.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 17 Mar 2016 12:04:05 +0100
+
+tango-apps-quango (1.3.2) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * Order host tree.
+
+  [ Georg Brandl ]
+  * Update copyright.
+  * Fix input string matching.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 02 Mar 2016 16:37:54 +0100
+
+tango-apps-quango (1.3.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Make big image a bit smaller.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 16 Dec 2015 15:17:03 +0100
+
+tango-apps-quango (1.3.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Dont enable the "execute" button unless a command/attr is selected.
+  * Better value conversion:
+  * Little better date format.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 02 Dec 2015 13:22:47 +0100
+
+tango-apps-quango (1.2.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Show integer return values in different bases.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 16 Nov 2015 16:50:28 +0100
+
+tango-apps-quango (1.2.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Show execution time in output.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 16 Nov 2015 12:37:09 +0100
+
+tango-apps-quango (1.1.2) unstable; urgency=low
+
+  * UNRELEASED
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 19 Oct 2015 13:43:11 +0200
+
+tango-apps-quango (1.1.1) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * Fix RELEASE_VERSION permission problems. (fixes: #2446)
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Tue, 13 Oct 2015 11:57:03 +0200
+
+tango-apps-quango (1.1.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Add simpler exception description.
+  * Make errors red.
+  * Wait poll interval *between* polls.
+  * itemAt can be None.
+  * Better error messages in output.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 11 Sep 2015 10:45:31 +0200
+
+tango-apps-quango (1.0.3) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Compatibility fix.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 10 Sep 2015 10:26:00 +0200
+
+tango-apps-quango (1.0.2) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Do not use tango error box for argin conversion errors.
+  * Do not show whole traceback in tango error box.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 09 Sep 2015 13:53:32 +0200
+
+tango-apps-quango (1.0.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Micro fix.
+  * Fix filtering.
+
+  [ Alexander Lenz ]
+  * Awesome usage of the unused status bar.
+
+  [ Georg Brandl ]
+  * Use TANGO_HOST by default.
+  * Better status bar.
+  * Hide buttons in poppedout windows.
+
+  [ Alexander Lenz ]
+  * about dialog: display version.
+
+  [ Georg Brandl ]
+  * .
+  * Fix str/unicode for Stephan.
+  * Small update to large app icon.
+  * A bit more error handling.
+  * Color!
+
+  [ Alexander Lenz ]
+  * Pollwidget: fancy remove button.
+
+  [ Georg Brandl ]
+  * Select next open panel.
+  * Fix widget.
+  * Fix deletion of panels.
+  * Show placeholder again on empty stack.
+  * Fix deletion of poppedout dialogs.
+  * Fix spacing.
+  * Remove unused widget.
+  * Add help button for cmds/attrs.
+  * Disable attribute R/W buttons as needed.
+  * Show help inline.
+  * Better name for item data types.
+  * Make _cmds and _attrs dicts.
+
+  [ Alexander Lenz ]
+  * Implement com thread.
+  * Minor fixes.
+
+  [ Georg Brandl ]
+  * Spacing.
+  * Do not crash if tango host is unavailable.
+  * Remove unecessary methods.
+  * Style fixes.
+
+  [ Alexander Lenz ]
+  * Add python shell.
+  * pyshell quickfix.
+  * Introduce the quango device shell.
+  * Improve tango error boxes.
+  * tango error box: add detailed tb.
+
+  [ Georg Brandl ]
+  * Really remove host.
+
+  [ Alexander Lenz ]
+  * Introduce displayTangoError.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Tue, 08 Sep 2015 11:39:47 +0200
+
+tango-apps-quango (1.0.0) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * quango watermark & pref dialog.
+
+  [ Georg Brandl ]
+  * Refactor: add object for Tango db/device addresses.
+  * Implement device/server deletion.
+  * Add close/popout buttons to device panel.
+
+  [ Alexander Lenz ]
+  * Implement pref dlg gui (no functionality).
+
+  [ Georg Brandl ]
+  * Fix tango address use.
+  * Fix display of ConstDevStrings.
+  * Adjust dlg spacing a bit.
+  * Nicer address in window title.
+
+  [ Alexander Lenz ]
+  * Implement displayspecialdomain setting.
+
+  [ Georg Brandl ]
+  * Finish the value conversion routines.
+  * A bit more error handling.
+  * Distinguish input errors from execution errors.
+
+  [ Alexander Lenz ]
+  * Implement polling prefs.
+  * Treat tango as special domain.
+  * Min poll interval: 0.1
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Fri, 04 Sep 2015 13:38:15 +0200
+
+tango-apps-quango (0.3.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Add refresh btn.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 03 Sep 2015 17:09:34 +0200
+
+tango-apps-quango (0.3.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Put properties in a ScrollArea.
+  * Add an "update device tree" command.
+  * Remember last open tango hosts.
+  * Add refresh properties button, sort props by name
+  * Fix margins for popout windows.
+  * Apply single tango host for devices on cmdline; ensure items are selected in tree
+  * Set focus to input line when selecting command.
+  * Only read new properties once.
+  * Marginally better error handling when device is not exported.
+  * Fix the list refresh feature.
+  * Stretch factor adjustment.
+  * Better window title for main window.
+  * Add nostalgia.
+  * Better handling for nonexisting/nonexported devices.
+  * Fix spacing between properties.
+  * Hide nonmatching items when filtering.
+
+  [ Alexander Lenz ]
+  * openDevsListWidgetFactoryContainerElementTemplate
+
+  [ Georg Brandl ]
+  * Disable unused tabs.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 03 Sep 2015 15:24:52 +0200
+
+tango-apps-quango (0.2.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Minor error handling fix.
+
+  [ Alexander Lenz ]
+  * Install ui files.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Thu, 03 Sep 2015 10:52:29 +0200
+
+tango-apps-quango (0.2.0) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * Add broom.
+  * Add more icons.
+  * Moar icons.
+
+  [ Alexander Lenz ]
+  * Add new icons to qrc.
+  * cmndattrwidget: clear button.
+
+  [ Georg Brandl ]
+  * Add info icon.
+  * Rcc update.
+
+  [ Alexander Lenz ]
+  * Use all the fancy icons!
+  * Refactor dev open.
+  * Improve cli args.
+  * Fix cli args.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 02 Sep 2015 16:30:37 +0200
+
+tango-apps-quango (0.1.8) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * Fix debian.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Wed, 02 Sep 2015 14:07:23 +0200
+
+tango-apps-quango (0.1.7) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * [deb] doc fix.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Tue, 01 Sep 2015 14:59:50 +0200
+
+tango-apps-quango (0.1.6) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * [deb] Add git build dep.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 31 Aug 2015 16:25:15 +0200
+
+tango-apps-quango (0.1.5) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * Fix unicode issues with older pytango versions.
+  * Make poll button checkable.
+  * [deb] Use debhelper 9.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 31 Aug 2015 16:04:54 +0200
+
+tango-apps-quango (0.1.4) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * Raise all windows if any is focused.
+  * [deb] Fix rules.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 31 Aug 2015 15:07:48 +0200
+
+tango-apps-quango (0.1.3) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * Use appicon.
+  * [deb] Fix deps.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 31 Aug 2015 14:21:40 +0200
+
+tango-apps-quango (0.1.2) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * Add versioning stuff.
+  * [deb] Add setuptools dep.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 31 Aug 2015 13:01:12 +0200
+
+tango-apps-quango (0.1.1) unstable; urgency=low
+
+  [ Alexander Lenz ]
+  * [deb] Disable auto_clean.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 31 Aug 2015 12:45:14 +0200
+
+tango-apps-quango (0.1.0) unstable; urgency=low
+
+  * UNRELEASED
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 31 Aug 2015 11:50:41 +0200
+
+tango-apps-quango (0.0.1) unstable; urgency=low
+
+  [ Georg Brandl ]
+  * add minimal device interface
+
+  [ Alexander Lenz ]
+  * Add simple input dialog for adding tango hosts, and About Qt dialog.
+
+  [ Georg Brandl ]
+  * add more GUI elements in device panel.
+  * Save window geometry.
+
+  [ Alexander Lenz ]
+  * Introduce context menu for tree widget.
+  * Rename break out => pop out.
+  * Implement pop out feature.
+  * Improve enabled state of pop out action.
+  * Implement info tab.
+  * RO implementation of pro tab.
+
+  [ Georg Brandl ]
+  * double header fun
+
+  [ Alexander Lenz ]
+  * prop tab: implement refresh.
+  * prop tab: implement writing
+  * device widget: change default tab to cmd.
+  * Redesign cmd/attr tab.
+  * Reuse prowidget for attributes.
+  * Introduce generic cmd widget.
+
+  [ Georg Brandl ]
+  * add module for value conversions
+
+  [ Alexander Lenz ]
+  * GenericCommandWidget: improve output.
+  * GenericCommandWidget: support double clicking.
+  * GenericCommandWidget: errors => output.
+  * Support conversion of DevString and DevVarStringArray.
+
+  [ Georg Brandl ]
+  * Add app icon and README for attribution.
+
+  [ Alexander Lenz ]
+  * GenericCommandWidget: fancy output!
+  * GenericCommandWidget: support enter/return.
+  * GenericCommandWidget: change time format.
+  * First experimental version of new gencmdattr gui.
+  * GenericCmdAttrWidget: minor tweaks.
+  * Improve copyright notices.
+  * Fix typos.
+  * Rudimentary prop handling for non standard devices.
+  * Add simple device filter.
+  * Add db info action.
+
+  [ Georg Brandl ]
+  * command list: sort attrs; filter out State and Status attrs
+  * device: make type handling more consistent
+  * info tab: show more info from DB
+  * fix a few layout margin issues
+  * show argument type that must be entered
+  * output: use monospace
+  * device: more consistent exception handling for attributes
+  * device: small escaping fixes
+  * commands/attributes: implement polling
+  * allow entering hex values
+  * more todo
+
+  [ Alexander Lenz ]
+  * Add debian files.
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Mon, 31 Aug 2015 11:14:32 +0200
